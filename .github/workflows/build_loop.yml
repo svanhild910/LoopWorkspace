@@ -295,6 +295,9 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
+
+          # Loop: svanhild910-patch-1:Endre standard karbo tider
+          curl https://github.com/svanhild910/Loop/commit/6a0aaa5c5e3704fe5b9fc2fb9ff8c9ba8681d0ad.patch | git apply -v --directory=Loop
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
